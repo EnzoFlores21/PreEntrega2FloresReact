@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 const useCounter = (min, max) => {
     const [count, setCount] = useState(min)

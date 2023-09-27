@@ -1,11 +1,12 @@
 import React from 'react'
 
-import CartWidget from './CartWidget/CartWidget';
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import CartWidget from './CartWidget';
 import { Link, NavLink } from 'react-router-dom';
+
+
 
 
 
@@ -19,7 +20,7 @@ const NavBar = () => {
                     <NavLink className={({isActive})=>isActive ? 'btn btn-primary' : 'btn btn-outline-primary'} to="/category/creatina">Creatina</NavLink>
                     <NavLink className={({isActive})=>isActive ? 'btn btn-primary' : 'btn btn-outline-primary'} to="/category/accesorios">Accesorios</NavLink>
                 </Nav>
-                <Link to='/CartWidget'>
+                <Link to='/Cart'>
                     <CartWidget />
                 </Link>
             </Container>

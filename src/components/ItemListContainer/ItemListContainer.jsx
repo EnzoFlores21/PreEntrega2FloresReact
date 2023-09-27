@@ -22,7 +22,7 @@ const ItemListContainer = () => {
             .catch(err => console.log(err))
             .finally(() => SetLoading(false))
         }
-    }, [])
+    }, [cid])
 
     console.log(products);
     return (
