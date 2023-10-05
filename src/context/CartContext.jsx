@@ -27,11 +27,9 @@ export const CartContextProvider = ({ children }) => {
         }
     }
 
-    // Eliminar por producto
+
     const eliminarProducto = (pid) => setCartList(cartList.filter(prod => prod.id !== pid))
-    // mostrar la cantidad de productos total que tienen 
     const cantidadTotal = ()=> cartList.reduce((cantidadTotal, objProduct)=> cantidadTotal += objProduct.quantity ,0)
-    // precio total (()=>{}, inicializador de precio total)
     const precioTotal = () => cartList.reduce((precioTotal, objProduct)=> precioTotal += (objProduct.price * objProduct.quantity) ,0)
 
     const deleteCart = ()=>{
