@@ -15,8 +15,7 @@ const CartContainer = () => {
     const { cartList, deleteCart, eliminarProducto, precioTotal } = useCartContext()
 
 
-    const handleAddOrder = async (evt) => {
-        evt.preventDefault()
+    const handleAddOrder = async (dataForm) => {
         const order = {}
         order.buyer = dataForm
         order.items = cartList.map(prod => {
